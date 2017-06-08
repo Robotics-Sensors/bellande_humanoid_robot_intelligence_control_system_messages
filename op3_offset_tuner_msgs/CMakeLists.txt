@@ -1,9 +1,12 @@
+################################################################################
+# CMake
+################################################################################
 cmake_minimum_required(VERSION 2.8.3)
 project(op3_offset_tuner_msgs)
 
-## Find catkin macros and libraries
-## if COMPONENTS list like find_package(catkin REQUIRED COMPONENTS xyz)
-## is used, also find other catkin packages
+################################################################################
+# Packages
+################################################################################
 find_package(catkin REQUIRED COMPONENTS
   roscpp
   rospy
@@ -11,7 +14,9 @@ find_package(catkin REQUIRED COMPONENTS
   message_generation
 )
 
-## Generate messages in the 'msg' folder
+################################################################################
+# Declare ROS messages, services and actions
+################################################################################
 add_message_files(
    FILES
    JointOffsetData.msg
@@ -20,33 +25,34 @@ add_message_files(
    JointTorqueOnOffArray.msg
 )
 
-## Generate services in the 'srv' folder
 add_service_files(
    FILES
    GetPresentJointOffsetData.srv
 )
 
-## Generate added messages and services with any dependencies listed here
- generate_messages(
+generate_messages(
    DEPENDENCIES
    std_msgs
 )
 
+################################################################################
+# Declare ROS dynamic reconfigure parameters
+################################################################################
 
-###################################
-## catkin specific configuration ##
-###################################
-## The catkin_package macro generates cmake config files for your package
+################################################################################
+# Catkin specific configuration
+################################################################################
 catkin_package(
 )
 
-###########
-## Build ##
-###########
+################################################################################
+# Build
+################################################################################
 
-## Specify additional locations of header files
-include_directories(
-  ${catkin_INCLUDE_DIRS}
-)
+################################################################################
+# Install
+################################################################################
 
-
+################################################################################
+# Test
+################################################################################
