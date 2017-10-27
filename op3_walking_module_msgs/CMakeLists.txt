@@ -9,8 +9,6 @@ project(op3_walking_module_msgs)
 ################################################################################
 find_package(catkin REQUIRED COMPONENTS
   message_generation
-  roscpp
-  rospy
   std_msgs
 )
 
@@ -40,7 +38,9 @@ generate_messages(
 ################################################################################
 # Catkin specific configuration
 ################################################################################
-catkin_package()
+catkin_package(
+  CATKIN_DEPENDS message_runtime std_msgs
+)
 
 ################################################################################
 # Build

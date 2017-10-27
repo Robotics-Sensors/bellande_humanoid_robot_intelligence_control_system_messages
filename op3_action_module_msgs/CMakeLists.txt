@@ -4,13 +4,12 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(op3_action_module_msgs)
 
-
 ################################################################################
 # Packages
 ################################################################################
 find_package(catkin REQUIRED COMPONENTS
-  std_msgs
   message_generation
+  std_msgs
 )
 
 ################################################################################
