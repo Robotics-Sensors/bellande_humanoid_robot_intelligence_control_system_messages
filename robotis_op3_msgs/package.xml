@@ -3,7 +3,7 @@
   <name>robotis_op3_msgs</name>
   <version>0.1.0</version>
   <description>
-    Message and service types: custom messages and services for ROBOTIS OP3 packages
+    ROS msgs packages for the ROBOTIS OP3 (meta package)
   </description>
   <license>Apache License 2.0</license>
   <author email="kmjung@robotis.com">Kayman</author>
