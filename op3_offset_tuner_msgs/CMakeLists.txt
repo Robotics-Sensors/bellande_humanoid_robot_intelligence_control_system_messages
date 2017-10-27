@@ -8,10 +8,8 @@ project(op3_offset_tuner_msgs)
 # Packages
 ################################################################################
 find_package(catkin REQUIRED COMPONENTS
-  roscpp
-  rospy
-  std_msgs
   message_generation
+  std_msgs
 )
 
 ################################################################################
@@ -43,6 +41,7 @@ generate_messages(
 # Catkin specific configuration
 ################################################################################
 catkin_package(
+  CATKIN_DEPENDS message_runtime std_msgs
 )
 
 ################################################################################
