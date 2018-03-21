@@ -1,15 +1,22 @@
+################################################################################
+# Set minimum required version of cmake, project name and compile options
+################################################################################
 cmake_minimum_required(VERSION 2.8.3)
 project(op3_online_walking_module_msgs)
 
 ################################################################################
-# Packages
+# Find catkin packages and libraries for catkin and system dependencies
 ################################################################################
 find_package(catkin REQUIRED COMPONENTS
-  sensor_msgs
   std_msgs
+  sensor_msgs
   geometry_msgs
   message_generation
 )
+
+################################################################################
+# Setup for python modules and scripts
+################################################################################
 
 ################################################################################
 # Declare ROS messages, services and actions
@@ -42,10 +49,14 @@ generate_messages(
 )
 
 ################################################################################
-# Catkin specific configuration
+# Declare ROS dynamic reconfigure parameters
+################################################################################
+
+################################################################################
+# Declare catkin specific configuration to be passed to dependent projects
 ################################################################################
 catkin_package(
-  CATKIN_DEPENDS std_msgs sensor_msgs geometry_msgs
+  CATKIN_DEPENDS std_msgs sensor_msgs geometry_msgs message_runtime
 )
 
 ################################################################################
