@@ -1,38 +1,40 @@
 ################################################################################
-# CMake
+# Set minimum required version of cmake, project name and compile options
 ################################################################################
 cmake_minimum_required(VERSION 2.8.3)
 project(op3_offset_tuner_msgs)
 
 ################################################################################
-# Packages
+# Find catkin packages and libraries for catkin and system dependencies
 ################################################################################
 find_package(catkin REQUIRED COMPONENTS
-  roscpp
-  rospy
   std_msgs
   message_generation
 )
 
 ################################################################################
+# Setup for python modules and scripts
+################################################################################
+
+################################################################################
 # Declare ROS messages, services and actions
 ################################################################################
 add_message_files(
-   FILES
-   JointOffsetData.msg
-   JointOffsetPositionData.msg
-   JointTorqueOnOff.msg
-   JointTorqueOnOffArray.msg
+  FILES
+  JointOffsetData.msg
+  JointOffsetPositionData.msg
+  JointTorqueOnOff.msg
+  JointTorqueOnOffArray.msg
 )
 
 add_service_files(
-   FILES
-   GetPresentJointOffsetData.srv
+  FILES
+  GetPresentJointOffsetData.srv
 )
 
 generate_messages(
-   DEPENDENCIES
-   std_msgs
+  DEPENDENCIES
+  std_msgs
 )
 
 ################################################################################
@@ -40,9 +42,10 @@ generate_messages(
 ################################################################################
 
 ################################################################################
-# Catkin specific configuration
+# Declare catkin specific configuration to be passed to dependent projects
 ################################################################################
 catkin_package(
+  CATKIN_DEPENDS std_msgs message_runtime
 )
 
 ################################################################################
