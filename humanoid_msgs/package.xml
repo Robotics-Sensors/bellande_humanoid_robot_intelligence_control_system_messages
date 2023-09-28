@@ -6,11 +6,7 @@
   </description>
   <author>Armin Hornung</author>
   <maintainer email="ronaldsonbellande@gmail.com">Ronaldson Bellande</maintainer>
-  <license>BSD</license>
-
-  <url>http://www.ros.org/wiki/humanoid_msgs</url>
-  <url type="bugtracker">https://github.com/ahornung/humanoid_msgs/issues</url>
-  <url type="repository">https://github.com/ahornung/humanoid_msgs</url>
+  <license>Apache 2.0</license>
 
   <buildtool_depend>catkin</buildtool_depend>
   <export>

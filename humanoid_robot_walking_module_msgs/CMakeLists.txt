@@ -1,8 +1,8 @@
 ################################################################################
 # Set minimum required version of cmake, project name and compile options
 ################################################################################
-cmake_minimum_required(VERSION 0.3.0)
-project(op3_tuning_module_msgs)
+cmake_minimum_required(VERSION 3.0.2)
+project(humanoid_robot_walking_module_msgs)
 
 ################################################################################
 # Find catkin packages and libraries for catkin and system dependencies
@@ -22,15 +22,13 @@ find_package(
 ################################################################################
 add_message_files(
   FILES
-  JointOffsetData.msg
-  JointOffsetPositionData.msg
-  JointTorqueOnOff.msg
-  JointTorqueOnOffArray.msg
+  WalkingParam.msg
 )
 
 add_service_files(
   FILES
-  GetPresentJointOffsetData.srv
+  GetWalkingParam.srv
+  SetWalkingParam.srv
 )
 
 generate_messages(

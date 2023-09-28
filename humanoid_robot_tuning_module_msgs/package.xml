@@ -1,17 +1,10 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>op3_action_module_msgs</name>
+  <name>humanoid_robot_tuning_module_msgs</name>
   <version>0.3.0</version>
-  <description>This package includes ROS messages and services for the ROBOTIS OP3 packages</description>
+  <description>This package includes ROS messages and services for the ROBOTIS HUMANOID_ROBOT packages</description>
   <license>Apache 2.0</license>
-  <author email="kmjung@robotis.com">Kayman</author>
   <maintainer email="ronaldsonbellande@gmail.com">Ronaldson Bellande</maintainer>
-
-  <url type="website">http://wiki.ros.org/op3_action_module_msgs</url>
-  <url type="emanual">http://emanual.robotis.com/docs/en/platform/op3/robotis_ros_packages/</url>
-  <url type="repository">https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Msgs</url>
-  <url type="bugtracker">https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Msgs/issues</url>
-
 
   <buildtool_depend>catkin</buildtool_depend>
 
