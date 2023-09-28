@@ -1,7 +1,7 @@
 # ROS/ROS2 Humanoid Robot Messages
 
 --------------------------------------------------------------------------------------------------------
-Updated Version [humanoid_robot_module](https://github.com/Robotics-Sensors/humanoid_robot_messages) readme.
+Updated Version [humanoid_robot_messages](https://github.com/Robotics-Sensors/humanoid_robot_messages) readme.
 
 --------------------------------------------------------------------------------------------------------
 ## Important
