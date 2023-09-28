@@ -1,5 +1,5 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package robotis_controller_msgs
+Changelog for package humanoid_robot_controller_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 0.3.1 (2023-09-27)
@@ -43,5 +43,5 @@ Changelog for package robotis_controller_msgs
 ------------------
 * first public release for Kinetic
 * modified the package information
-* added robotis_controller_msgs
+* added humanoid_robot_controller_msgs
 * Contributors: Zerom, Pyo

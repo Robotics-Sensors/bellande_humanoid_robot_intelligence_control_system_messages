@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>robotis_humanoid_robot_msgs</name>
+  <name>humanoid_robot_msgs</name>
   <version>0.3.0</version>
   <description>ROS messages packages for the ROBOTIS HUMANOID_ROBOT (meta package)</description>
   <license>Apache 2.0</license>
