@@ -1,0 +1,16 @@
+<package>
+  <name>humanoid_msgs</name>
+  <version>0.3.0</version>
+  <description>
+    Messages and services for humanoid robots
+  </description>
+  <author>Armin Hornung</author>
+  <maintainer email="ronaldsonbellande@gmail.com">Ronaldson Bellande</maintainer>
+  <license>Apache 2.0</license>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <export>
+    <metapackage />
+  </export>
+
+</package>

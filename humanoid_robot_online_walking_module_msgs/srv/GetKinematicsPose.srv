@@ -1,0 +1,3 @@
+string    name
+---
+humanoid_robot_online_walking_module_msgs/KinematicsPose pose

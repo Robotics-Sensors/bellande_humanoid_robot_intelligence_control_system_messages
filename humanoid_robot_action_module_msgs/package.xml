@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>humanoid_robot_action_module_msgs</name>
+  <version>0.3.0</version>
+  <description>This package includes ROS messages and services for the ROBOTIS HUMANOID_ROBOT packages</description>
+  <license>Apache 2.0</license>
+  <maintainer email="ronaldsonbellande@gmail.com">Ronaldson Bellande</maintainer>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend>std_msgs</build_depend>
+  <build_depend>message_generation</build_depend>
+  <build_depend>message_runtime</build_depend>
+
+  <build_export_depend>std_msgs</build_export_depend>
+  <build_export_depend>message_generation</build_export_depend>
+  <build_export_depend>message_runtime</build_export_depend>
+
+  <exec_depend>std_msgs</exec_depend>
+  <exec_depend>message_generation</exec_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+</package>
