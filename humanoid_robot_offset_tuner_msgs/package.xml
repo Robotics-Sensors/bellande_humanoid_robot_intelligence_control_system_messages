@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>humanoid_robot_offset_tuner_msgs</name>
   <version>0.3.0</version>
   <description>This package includes ROS messages and services for the ROBOTIS HUMANOID_ROBOT packages</description>

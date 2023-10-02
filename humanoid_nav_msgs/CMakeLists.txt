@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.2)
+cmake_minimum_required(VERSION 3.8)
 project(humanoid_nav_msgs)
 
 #List to make rest of code more readable
