@@ -1,26 +1,19 @@
-################################################################################
-# Set minimum required version of cmake, project name and compile options
-################################################################################
 cmake_minimum_required(VERSION 3.8)
 project(humanoid_robot_controller_msgs)
 
-################################################################################
-# Find catkin packages and libraries for catkin and system dependencies
-################################################################################
-find_package(
-  catkin REQUIRED COMPONENTS
-  std_msgs
-  sensor_msgs
-  message_generation
-)
 
-################################################################################
-# Setup for python modules and scripts
-################################################################################
+if($ENV{ROS_VERSION} EQUAL 1)
+  find_package(
+    catkin REQUIRED COMPONENTS
+    std_msgs
+    sensor_msgs
+    message_generation
+  )
+else()
+  find_package(ament_cmake REQUIRED)
+endif()
 
-################################################################################
-# Declare ROS messages, services and actions
-################################################################################
+
 add_message_files(
   FILES
   SyncWriteItem.msg
@@ -43,28 +36,13 @@ generate_messages(
   sensor_msgs
 )
 
-################################################################################
-# Declare ROS dynamic reconfigure parameters
-################################################################################
-
-################################################################################
-# Declare catkin specific configuration to be passed to dependent projects
-################################################################################
-catkin_package(
-  CATKIN_DEPENDS
-  std_msgs
-  sensor_msgs
-  message_runtime
-)
-
-################################################################################
-# Build
-################################################################################
-
-################################################################################
-# Install
-################################################################################
-
-################################################################################
-# Test
-################################################################################
+if($ENV{ROS_VERSION} EQUAL 1)
+  catkin_package(
+    CATKIN_DEPENDS
+    std_msgs
+    sensor_msgs
+    message_runtime
+  )
+else()
+  ament_package()
+endif()
