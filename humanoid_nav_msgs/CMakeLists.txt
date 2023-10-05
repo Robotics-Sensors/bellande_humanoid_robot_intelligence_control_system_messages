@@ -17,18 +17,14 @@ else()
 endif()
 
 
-if($ENV{ROS_VERSION} EQUAL 1)
-  add_service_files(
-    DIRECTORY srv
-    FILES
-    ClipFootstep.srv
-    PlanFootsteps.srv
-    PlanFootstepsBetweenFeet.srv
-    StepTargetService.srv
-  )
-else()
-  ament_package()
-endif()
+add_service_files(
+  DIRECTORY srv
+  FILES
+  ClipFootstep.srv
+  PlanFootsteps.srv
+  PlanFootstepsBetweenFeet.srv
+  StepTargetService.srv
+)
 
 
 add_message_files(
@@ -49,5 +45,11 @@ add_action_files(
 #And now generate the messages
 generate_messages(DEPENDENCIES ${MESSAGE_DEPENDENCIES})
 
-# Generate catkin/pkg-config import information
-catkin_package(CATKIN_DEPENDS message_runtime ${MESSAGE_DEPENDENCIES})
+
+if($ENV{ROS_VERSION} EQUAL 1)
+  catkin_package(
+    CATKIN_DEPENDS 
+    message_runtime 
+    ${MESSAGE_DEPENDENCIES}
+  )
+endif()

@@ -36,6 +36,4 @@ if($ENV{ROS_VERSION} EQUAL 1)
     std_msgs
     message_runtime
   )
-else()
-  ament_package()
 endif()
