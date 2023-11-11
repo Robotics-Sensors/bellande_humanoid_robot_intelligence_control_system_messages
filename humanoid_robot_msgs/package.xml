@@ -42,7 +42,5 @@
   <exec_depend condition="$ROS_VERSION == 2">humanoid_robot_online_walking_module_msgs</exec_depend>
   <exec_depend condition="$ROS_VERSION == 2">humanoid_robot_walking_module_msgs</exec_depend>
 
-  <export>
-    <metapackage />
-  </export>
+  <export></export>
 </package>
