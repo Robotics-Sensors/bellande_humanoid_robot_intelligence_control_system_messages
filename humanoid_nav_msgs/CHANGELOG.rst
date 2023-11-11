@@ -19,7 +19,7 @@ Changelog for package humanoid_nav_msgs
 * Update package.xml and CMakeList.txt for to the latest versions
 * Contributors & Maintainer: Ronaldson Bellande
 
-0.3.0 (2022-05-06)
+0.3.1.5 (2022-05-06)
 ------------------
 * Update package.xml and CMakeList.txt for noetic branch
 * Ronaldson Bellande
