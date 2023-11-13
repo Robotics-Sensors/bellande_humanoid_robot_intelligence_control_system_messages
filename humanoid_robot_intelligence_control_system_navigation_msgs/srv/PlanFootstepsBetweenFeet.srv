@@ -1,0 +1,11 @@
+humanoid_robot_intelligence_control_system_navigation_msgs/StepTarget start_left
+humanoid_robot_intelligence_control_system_navigation_msgs/StepTarget start_right
+humanoid_robot_intelligence_control_system_navigation_msgs/StepTarget goal_left
+humanoid_robot_intelligence_control_system_navigation_msgs/StepTarget goal_right
+---
+bool result
+humanoid_robot_intelligence_control_system_navigation_msgs/StepTarget[] footsteps
+float64 costs
+float64 final_eps
+float64 planning_time
+int64 expanded_states

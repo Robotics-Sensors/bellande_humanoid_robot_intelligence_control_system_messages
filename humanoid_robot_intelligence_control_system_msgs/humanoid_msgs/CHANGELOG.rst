@@ -1,5 +1,5 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package humanoid_msgs
+Changelog for package humanoid_robot_intelligence_control_system_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 0.3.2 (2023-10-03)

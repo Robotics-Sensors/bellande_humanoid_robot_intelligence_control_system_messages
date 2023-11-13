@@ -1,0 +1,9 @@
+# Define the goal
+humanoid_robot_intelligence_control_system_navigation_msgs/StepTarget[] footsteps
+float64 feedback_frequency
+---
+# Define the result
+humanoid_robot_intelligence_control_system_navigation_msgs/StepTarget[] executed_footsteps
+---
+# Define a feedback message
+humanoid_robot_intelligence_control_system_navigation_msgs/StepTarget[] executed_footsteps

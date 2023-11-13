@@ -1,5 +1,5 @@
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-Changelog for package humanoid_nav_msgs
+Changelog for package humanoid_robot_intelligence_control_system_navigation_msgs
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 0.3.2 (2023-10-03)
@@ -40,4 +40,4 @@ Changelog for package humanoid_nav_msgs
 * action ExecFootsteps can now feedback changeable_footsteps and robot_pose (see naoqi docu for further info)
 * integrated a new action to communicate with the action server provided by nao_footsteps.py in the nao_driver package
 * service to clip footsteps
-* moved humanoid_nav_msgs into new humanoid_msgs stack
+* moved humanoid_robot_intelligence_control_system_navigation_msgs into new humanoid_robot_intelligence_control_system_msgs stack

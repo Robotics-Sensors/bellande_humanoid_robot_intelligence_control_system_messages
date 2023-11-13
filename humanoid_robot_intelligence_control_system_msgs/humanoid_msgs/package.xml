@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <package format="3">
-  <name>humanoid_msgs</name>
+  <name>humanoid_robot_intelligence_control_system_msgs</name>
   <version>0.3.2</version>
   <description>Messages and services for humanoid robots</description>
   <maintainer email="ronaldsonbellande@gmail.com">Ronaldson Bellande</maintainer>

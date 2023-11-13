@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(humanoid_nav_msgs)
+project(humanoid_robot_intelligence_control_system_navigation_msgs)
 
 #List to make rest of code more readable
 set(MESSAGE_DEPENDENCIES std_msgs geometry_msgs actionlib_msgs)
