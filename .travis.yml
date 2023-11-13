@@ -15,7 +15,7 @@ notifications:
     on_success: change
     on_failure: always
     recipients:
-      - pyo@humanoid_robot.com
+      - pyo@humanoid_robot_intelligence_control_system.com
 env:
   matrix:
     - ROS_DISTRO=noetic ROS_REPO=ros-shadow-fixed UPSTREAM_WORKSPACE=debian

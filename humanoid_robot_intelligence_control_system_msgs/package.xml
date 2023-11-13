@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>humanoid_robot_intelligence_control_system_msgs</name>
+  <version>0.3.2</version>
+  <description>ROS messages packages for the ROBOTIS HUMANOID_ROBOT (meta package)</description>
+  <license>Apache 2.0</license>
+  <maintainer email="ronaldsonbellande@gmail.com">Ronaldson Bellande</maintainer>
+
+
+  <buildtool_depend condition="$ROS_VERSION == 1">catkin</buildtool_depend>
+
+  <build_depend condition="$ROS_VERSION == 1">humanoid_robot_intelligence_control_system_action_module_msgs</build_depend>
+  <build_depend condition="$ROS_VERSION == 1">humanoid_robot_intelligence_control_system_offset_tuner_msgs</build_depend>
+  <build_depend condition="$ROS_VERSION == 1">humanoid_robot_intelligence_control_system_online_walking_module_msgs</build_depend>
+  <build_depend condition="$ROS_VERSION == 1">humanoid_robot_intelligence_control_system_walking_module_msgs</build_depend>
+
+  <build_export_depend condition="$ROS_VERSION == 1">humanoid_robot_intelligence_control_system_action_module_msgs</build_export_depend>
+  <build_export_depend condition="$ROS_VERSION == 1">humanoid_robot_intelligence_control_system_offset_tuner_msgs</build_export_depend>
+  <build_export_depend condition="$ROS_VERSION == 1">humanoid_robot_intelligence_control_system_online_walking_module_msgs</build_export_depend>
+  <build_export_depend condition="$ROS_VERSION == 1">humanoid_robot_intelligence_control_system_walking_module_msgs</build_export_depend>
+
+  <exec_depend condition="$ROS_VERSION == 1">humanoid_robot_intelligence_control_system_action_module_msgs</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 1">humanoid_robot_intelligence_control_system_offset_tuner_msgs</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 1">humanoid_robot_intelligence_control_system_online_walking_module_msgs</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 1">humanoid_robot_intelligence_control_system_walking_module_msgs</exec_depend>
+
+
+  <buildtool_depend condition="$ROS_VERSION == 2">ament_cmake</buildtool_depend>
+
+  <build_depend condition="$ROS_VERSION == 2">humanoid_robot_intelligence_control_system_action_module_msgs</build_depend>
+  <build_depend condition="$ROS_VERSION == 2">humanoid_robot_intelligence_control_system_offset_tuner_msgs</build_depend>
+  <build_depend condition="$ROS_VERSION == 2">humanoid_robot_intelligence_control_system_online_walking_module_msgs</build_depend>
+  <build_depend condition="$ROS_VERSION == 2">humanoid_robot_intelligence_control_system_walking_module_msgs</build_depend>
+
+  <build_export_depend condition="$ROS_VERSION == 2">humanoid_robot_intelligence_control_system_action_module_msgs</build_export_depend>
+  <build_export_depend condition="$ROS_VERSION == 2">humanoid_robot_intelligence_control_system_offset_tuner_msgs</build_export_depend>
+  <build_export_depend condition="$ROS_VERSION == 2">humanoid_robot_intelligence_control_system_online_walking_module_msgs</build_export_depend>
+  <build_export_depend condition="$ROS_VERSION == 2">humanoid_robot_intelligence_control_system_walking_module_msgs</build_export_depend>
+
+  <exec_depend condition="$ROS_VERSION == 2">humanoid_robot_intelligence_control_system_action_module_msgs</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 2">humanoid_robot_intelligence_control_system_offset_tuner_msgs</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 2">humanoid_robot_intelligence_control_system_online_walking_module_msgs</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 2">humanoid_robot_intelligence_control_system_walking_module_msgs</exec_depend>
+
+  <export></export>
+</package>
