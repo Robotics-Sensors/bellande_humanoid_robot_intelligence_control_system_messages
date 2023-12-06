@@ -32,7 +32,7 @@ Explore our [repository website](https://robotics-sensors.github.io/humanoid_rob
 ### 🔄 Updates and Versions
 
 - **Updated Version:** [humanoid_robot_intelligence_control_system_module](https://github.com/Robotics-Sensors/humanoid_robot_intelligence_control_system_messages)
-- **Old Version/Previous Used for Different Context:** [ROBOTIS-OP3-Messages](https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-Messages)
+- **Old Version/Previous Used for Different Context:** [ROBOTIS-OP3-msgs](https://github.com/ROBOTIS-GIT/ROBOTIS-OP3-msgs)
 
 ---
 
