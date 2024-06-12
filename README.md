@@ -62,7 +62,7 @@ Explore our [repository website](https://robotics-sensors.github.io/humanoid_rob
 
 # 🎉 Latest Release
 
-[![Latest Release](https://img.shields.io/github/v/release/Robotics-Sensors/humanoid_robot_intelligence_control_system_tools?style=for-the-badge&color=yellow)](https://github.com/Robotics-Sensors/humanoid_robot_intelligence_control_system_messages/releases/)
+[![Latest Release](https://img.shields.io/github/v/release/Robotics-Sensors/bellande_humanoid_robot_intelligence_control_system_tools?style=for-the-badge&color=yellow)](https://github.com/Robotics-Sensors/bellande_humanoid_robot_intelligence_control_system_messages/releases/)
 
 ---
 
