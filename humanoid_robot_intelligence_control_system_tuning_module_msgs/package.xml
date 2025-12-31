@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright (C) <year> Bellande Robotics Sensors Research Innovation Center, Ronaldson Bellande
+Copyright (C) 2024 Bellande Robotics Sensors Research Innovation Center, Ronaldson Bellande
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not
 use this file except in compliance with the License. You may obtain a copy of
@@ -18,8 +18,9 @@ the License.
 <package format="3">
   <name>humanoid_robot_intelligence_control_system_tuning_module_msgs</name>
   <version>0.3.2</version>
-  <description>This package includes ROS messages and services for the ROBOTIS HUMANOID_ROBOT
-    packages</description>
+  <description>
+    This package includes ROS messages and services for the ROBOTIS HUMANOID_ROBOT packages
+  </description>
   <license>Apache 2.0</license>
   <maintainer email="ronaldsonbellande@gmail.com">Ronaldson Bellande</maintainer>
 
@@ -28,29 +29,23 @@ the License.
 
   <build_depend condition="$ROS_VERSION == 1">std_msgs</build_depend>
   <build_depend condition="$ROS_VERSION == 1">message_generation</build_depend>
-  <build_depend condition="$ROS_VERSION == 1">message_runtime</build_depend>
 
   <build_export_depend condition="$ROS_VERSION == 1">std_msgs</build_export_depend>
-  <build_export_depend condition="$ROS_VERSION == 1">message_generation</build_export_depend>
-  <build_export_depend condition="$ROS_VERSION == 1">message_runtime</build_export_depend>
 
   <exec_depend condition="$ROS_VERSION == 1">std_msgs</exec_depend>
-  <exec_depend condition="$ROS_VERSION == 1">message_generation</exec_depend>
   <exec_depend condition="$ROS_VERSION == 1">message_runtime</exec_depend>
 
 
   <buildtool_depend condition="$ROS_VERSION == 2">ament_cmake</buildtool_depend>
+  <buildtool_depend condition="$ROS_VERSION == 2">rosidl_default_generators</buildtool_depend>
 
   <build_depend condition="$ROS_VERSION == 2">std_msgs</build_depend>
-  <build_depend condition="$ROS_VERSION == 2">message_generation</build_depend>
-  <build_depend condition="$ROS_VERSION == 2">message_runtime</build_depend>
 
   <build_export_depend condition="$ROS_VERSION == 2">std_msgs</build_export_depend>
-  <build_export_depend condition="$ROS_VERSION == 2">message_generation</build_export_depend>
-  <build_export_depend condition="$ROS_VERSION == 2">message_runtime</build_export_depend>
 
   <exec_depend condition="$ROS_VERSION == 2">std_msgs</exec_depend>
-  <exec_depend condition="$ROS_VERSION == 2">message_generation</exec_depend>
-  <exec_depend condition="$ROS_VERSION == 2">message_runtime</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 2">rosidl_default_runtime</exec_depend>
+
+  <member_of_group condition="$ROS_VERSION == 2">rosidl_interface_packages</member_of_group>
 
 </package>

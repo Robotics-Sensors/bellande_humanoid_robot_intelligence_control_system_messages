@@ -1,11 +1,11 @@
 # Copyright (C) 2024 Bellande Robotics Sensors Research Innovation Center, Ronaldson Bellande
-# 
+#
 # Licensed under the Apache License, Version 2.0 (the "License"); you may not
 # use this file except in compliance with the License. You may obtain a copy of
 # the License at
-# 
+#
 # http://www.apache.org/licenses/LICENSE-2.0
-# 
+#
 # Unless required by applicable law or agreed to in writing, software
 # distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
 # WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the
@@ -15,7 +15,6 @@
 cmake_minimum_required(VERSION 3.8)
 project(humanoid_robot_intelligence_control_system_online_walking_module_msgs)
 
-
 if($ENV{ROS_VERSION} EQUAL 1)
   find_package(
     catkin REQUIRED COMPONENTS
@@ -24,39 +23,34 @@ if($ENV{ROS_VERSION} EQUAL 1)
     geometry_msgs
     message_generation
   )
-else()
-  find_package(ament_cmake REQUIRED)
-endif()
 
+  add_message_files(
+    FILES
+    JointPose.msg
+    KinematicsPose.msg
+    FootStepCommand.msg
+    FootStepArray.msg
+    PreviewRequest.msg
+    PreviewResponse.msg
+    WalkingParam.msg
+    Step2D.msg
+    Step2DArray.msg
+  )
 
-add_message_files(
-  FILES
-  JointPose.msg
-  KinematicsPose.msg
-  FootStepCommand.msg
-  FootStepArray.msg
-  PreviewRequest.msg
-  PreviewResponse.msg
-  WalkingParam.msg
-  Step2D.msg
-  Step2DArray.msg
-)
+  add_service_files(
+    FILES
+    GetJointPose.srv
+    GetKinematicsPose.srv
+    GetPreviewMatrix.srv
+  )
 
-add_service_files(
-  FILES
-  GetJointPose.srv
-  GetKinematicsPose.srv
-  GetPreviewMatrix.srv
-)
+  generate_messages(
+    DEPENDENCIES
+    std_msgs
+    sensor_msgs
+    geometry_msgs
+  )
 
-generate_messages(
-  DEPENDENCIES
-  std_msgs
-  sensor_msgs
-  geometry_msgs
-)
-
-if($ENV{ROS_VERSION} EQUAL 1)
   catkin_package(
     CATKIN_DEPENDS
     std_msgs
@@ -64,4 +58,31 @@ if($ENV{ROS_VERSION} EQUAL 1)
     geometry_msgs
     message_runtime
   )
+
+else()
+  find_package(ament_cmake REQUIRED)
+  find_package(std_msgs REQUIRED)
+  find_package(sensor_msgs REQUIRED)
+  find_package(geometry_msgs REQUIRED)
+  find_package(rosidl_default_generators REQUIRED)
+
+  rosidl_generate_interfaces(${PROJECT_NAME}
+    "msg/JointPose.msg"
+    "msg/KinematicsPose.msg"
+    "msg/FootStepCommand.msg"
+    "msg/FootStepArray.msg"
+    "msg/PreviewRequest.msg"
+    "msg/PreviewResponse.msg"
+    "msg/WalkingParam.msg"
+    "msg/Step2D.msg"
+    "msg/Step2DArray.msg"
+    "srv/GetJointPose.srv"
+    "srv/GetKinematicsPose.srv"
+    "srv/GetPreviewMatrix.srv"
+    DEPENDENCIES std_msgs sensor_msgs geometry_msgs
+  )
+
+  ament_export_dependencies(rosidl_default_runtime)
+
+  ament_package()
 endif()
