@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-Copyright (C) <year> Bellande Robotics Sensors Research Innovation Center, Ronaldson Bellande
+Copyright (C) 2026 Bellande Robotics Sensors Research Innovation Center, Ronaldson Bellande
 
 Licensed under the Apache License, Version 2.0 (the "License"); you may not
 use this file except in compliance with the License. You may obtain a copy of
@@ -50,19 +50,21 @@ the License.
   <build_depend condition="$ROS_VERSION == 2">std_msgs</build_depend>
   <build_depend condition="$ROS_VERSION == 2">sensor_msgs</build_depend>
   <build_depend condition="$ROS_VERSION == 2">geometry_msgs</build_depend>
-  <build_depend condition="$ROS_VERSION == 2">message_generation</build_depend>
-  <build_depend condition="$ROS_VERSION == 2">message_runtime</build_depend>
+  <build_depend condition="$ROS_VERSION == 2">rosidl_default_generators</build_depend>
 
   <build_export_depend condition="$ROS_VERSION == 2">std_msgs</build_export_depend>
   <build_export_depend condition="$ROS_VERSION == 2">sensor_msgs</build_export_depend>
   <build_export_depend condition="$ROS_VERSION == 2">geometry_msgs</build_export_depend>
-  <build_export_depend condition="$ROS_VERSION == 2">message_generation</build_export_depend>
-  <build_export_depend condition="$ROS_VERSION == 2">message_runtime</build_export_depend>
 
   <exec_depend condition="$ROS_VERSION == 2">std_msgs</exec_depend>
   <exec_depend condition="$ROS_VERSION == 2">sensor_msgs</exec_depend>
   <exec_depend condition="$ROS_VERSION == 2">geometry_msgs</exec_depend>
-  <exec_depend condition="$ROS_VERSION == 2">message_generation</exec_depend>
-  <exec_depend condition="$ROS_VERSION == 2">message_runtime</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 2">rosidl_default_generators</exec_depend>
+  
+  <member_of_group condition="$ROS_VERSION == 2">rosidl_interface_packages</member_of_group>
+
+  <export>
+    <build_type condition="$ROS_VERSION == 2">ament_cmake</build_type>
+  </export>
 
 </package>

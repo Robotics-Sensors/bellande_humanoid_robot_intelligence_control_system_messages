@@ -41,16 +41,14 @@ the License.
   <buildtool_depend condition="$ROS_VERSION == 2">ament_cmake</buildtool_depend>
 
   <build_depend condition="$ROS_VERSION == 2">std_msgs</build_depend>
-  <build_depend condition="$ROS_VERSION == 2">message_generation</build_depend>
-  <build_depend condition="$ROS_VERSION == 2">message_runtime</build_depend>
+  <build_depend condition="$ROS_VERSION == 2">rosidl_default_runtime</build_depend>
 
   <build_export_depend condition="$ROS_VERSION == 2">std_msgs</build_export_depend>
-  <build_export_depend condition="$ROS_VERSION == 2">message_generation</build_export_depend>
-  <build_export_depend condition="$ROS_VERSION == 2">message_runtime</build_export_depend>
 
   <exec_depend condition="$ROS_VERSION == 2">std_msgs</exec_depend>
-  <exec_depend condition="$ROS_VERSION == 2">message_generation</exec_depend>
-  <exec_depend condition="$ROS_VERSION == 2">message_runtime</exec_depend>
+  <exec_depend condition="$ROS_VERSION == 2">rosidl_default_runtime</exec_depend>
 
+  <member_of_group>rosidl_interface_packages</member_of_group>
 
+  <build_type>ament_cmake</build_type>
 </package>
